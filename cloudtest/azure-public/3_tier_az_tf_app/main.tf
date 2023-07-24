@@ -21,7 +21,7 @@ module "vnet" {
 }
 
 
-module "networking" {
+module "vmss" {
   source = "./vmss"
   rgname = module.vnet.rgname
   #vnet_name = module.vnet.vnet_names
